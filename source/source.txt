@@ -1,0 +1,13 @@
+nginx linux 
+    nginx-1.12.2
+nginx windows
+    nginx-stable-1.12
+
+nginx-rtmp-module-1.2.1
+
+openssl-1.0.2n
+
+pcre-8.41
+
+zlib-1.2.11
+
