@@ -17,22 +17,6 @@ Nginx rtmp 功能特点
 14.  支持跨平台 Linux/FreeBSD/MacOS
 
 
-下面搭建nginx+rtmp的步骤，使用centos 6.5 x64机器，提供的程序包在/opt/解压即可。
-zlib-1.2.11.tar.gz
-    http://www.zlib.net/zlib-1.2.11.tar.gz
-
-openssl-1.0.2n.tar.gz
-    https://www.openssl.org/source/openssl-1.0.2n.tar.gz
-
-pcre-8.41.tar.gz
-    https://sourceforge.net/projects/pcre/files/pcre/8.41/pcre-8.41.tar.gz/download
-
-nginx-rtmp-module-1.2.1.tar.gz
-    https://codeload.github.com/arut/nginx-rtmp-module/tar.gz/v1.2.1
-
-nginx-1.12.2.tar.gz
-    http://nginx.org/download/nginx-1.12.2.tar.gz
-
 
 编译nginx
 ./configure --prefix=/opt/nginx --add-module=../nginx-rtmp-module-1.2.1  --with-pcre=../pcre-8.41  --with-openssl=../openssl-1.0.2n --with-zlib=../zlib-1.2.11 --with-http_stub_status_module
