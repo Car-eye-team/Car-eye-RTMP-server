@@ -80,7 +80,7 @@ CFLAGS="$CFLAGS $CPU_OPT"
 
 # warnings
 
-CFLAGS="$CFLAGS -W4"
+CFLAGS="$CFLAGS -W3"
 
 # stop on warning
 CFLAGS="$CFLAGS -WX"

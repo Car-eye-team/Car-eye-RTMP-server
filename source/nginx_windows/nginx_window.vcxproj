@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\nginx-rtmp-module\dash\ngx_rtmp_dash_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\dash\ngx_rtmp_mp4.c" />
+    <ClCompile Include="..\nginx-rtmp-module\hls\ngx_rtmp_hls_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\hls\ngx_rtmp_mpegts.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_access_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_amf.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_auto_push_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_bandwidth.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_bitop.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_cmd_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_codec_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_control_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_core_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_eval.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_exec_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_flv_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_handler.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_handshake.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_init.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_limit_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_live_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_log_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_mp4_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_netcall_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_notify_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_play_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_proxy_protocol.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_receive.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_record_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_relay_module.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_send.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_shared.c" />
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_stat_module.c" />
+    <ClCompile Include="build\ngx_modules.c" />
+    <ClCompile Include="build\ngx_pch.c" />
+    <ClCompile Include="src\core\nginx.c" />
+    <ClCompile Include="src\core\ngx_array.c" />
+    <ClCompile Include="src\core\ngx_buf.c" />
+    <ClCompile Include="src\core\ngx_conf_file.c" />
+    <ClCompile Include="src\core\ngx_connection.c" />
+    <ClCompile Include="src\core\ngx_cpuinfo.c" />
+    <ClCompile Include="src\core\ngx_crc32.c" />
+    <ClCompile Include="src\core\ngx_crypt.c" />
+    <ClCompile Include="src\core\ngx_cycle.c" />
+    <ClCompile Include="src\core\ngx_file.c" />
+    <ClCompile Include="src\core\ngx_hash.c" />
+    <ClCompile Include="src\core\ngx_inet.c" />
+    <ClCompile Include="src\core\ngx_list.c" />
+    <ClCompile Include="src\core\ngx_log.c" />
+    <ClCompile Include="src\core\ngx_md5.c" />
+    <ClCompile Include="src\core\ngx_module.c" />
+    <ClCompile Include="src\core\ngx_murmurhash.c" />
+    <ClCompile Include="src\core\ngx_open_file_cache.c" />
+    <ClCompile Include="src\core\ngx_output_chain.c" />
+    <ClCompile Include="src\core\ngx_palloc.c" />
+    <ClCompile Include="src\core\ngx_parse.c" />
+    <ClCompile Include="src\core\ngx_parse_time.c" />
+    <ClCompile Include="src\core\ngx_proxy_protocol.c" />
+    <ClCompile Include="src\core\ngx_queue.c" />
+    <ClCompile Include="src\core\ngx_radix_tree.c" />
+    <ClCompile Include="src\core\ngx_rbtree.c" />
+    <ClCompile Include="src\core\ngx_regex.c" />
+    <ClCompile Include="src\core\ngx_resolver.c" />
+    <ClCompile Include="src\core\ngx_rwlock.c" />
+    <ClCompile Include="src\core\ngx_sha1.c" />
+    <ClCompile Include="src\core\ngx_shmtx.c" />
+    <ClCompile Include="src\core\ngx_slab.c" />
+    <ClCompile Include="src\core\ngx_spinlock.c" />
+    <ClCompile Include="src\core\ngx_string.c" />
+    <ClCompile Include="src\core\ngx_syslog.c" />
+    <ClCompile Include="src\core\ngx_times.c" />
+    <ClCompile Include="src\event\modules\ngx_iocp_module.c" />
+    <ClCompile Include="src\event\modules\ngx_win32_select_module.c" />
+    <ClCompile Include="src\event\ngx_event.c" />
+    <ClCompile Include="src\event\ngx_event_accept.c" />
+    <ClCompile Include="src\event\ngx_event_acceptex.c" />
+    <ClCompile Include="src\event\ngx_event_connect.c" />
+    <ClCompile Include="src\event\ngx_event_openssl.c" />
+    <ClCompile Include="src\event\ngx_event_openssl_stapling.c" />
+    <ClCompile Include="src\event\ngx_event_pipe.c" />
+    <ClCompile Include="src\event\ngx_event_posted.c" />
+    <ClCompile Include="src\event\ngx_event_timer.c" />
+    <ClCompile Include="src\http\modules\ngx_http_access_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_addition_filter_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_auth_basic_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_auth_request_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_autoindex_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_browser_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_charset_filter_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_chunked_filter_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_empty_gif_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_fastcgi_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_flv_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_geo_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_gunzip_filter_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_gzip_filter_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_gzip_static_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_headers_filter_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_index_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_limit_conn_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_limit_req_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_log_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_map_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_memcached_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_mp4_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_not_modified_filter_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_proxy_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_random_index_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_range_filter_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_referer_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_rewrite_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_scgi_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_secure_link_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_slice_filter_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_split_clients_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_ssi_filter_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_ssl_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_static_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_sub_filter_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_upstream_hash_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_upstream_ip_hash_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_upstream_keepalive_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_upstream_least_conn_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_upstream_zone_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_userid_filter_module.c" />
+    <ClCompile Include="src\http\modules\ngx_http_uwsgi_module.c" />
+    <ClCompile Include="src\http\ngx_http.c" />
+    <ClCompile Include="src\http\ngx_http_copy_filter_module.c" />
+    <ClCompile Include="src\http\ngx_http_core_module.c" />
+    <ClCompile Include="src\http\ngx_http_file_cache.c" />
+    <ClCompile Include="src\http\ngx_http_header_filter_module.c" />
+    <ClCompile Include="src\http\ngx_http_parse.c" />
+    <ClCompile Include="src\http\ngx_http_postpone_filter_module.c" />
+    <ClCompile Include="src\http\ngx_http_request.c" />
+    <ClCompile Include="src\http\ngx_http_request_body.c" />
+    <ClCompile Include="src\http\ngx_http_script.c" />
+    <ClCompile Include="src\http\ngx_http_special_response.c" />
+    <ClCompile Include="src\http\ngx_http_upstream.c" />
+    <ClCompile Include="src\http\ngx_http_upstream_round_robin.c" />
+    <ClCompile Include="src\http\ngx_http_variables.c" />
+    <ClCompile Include="src\http\ngx_http_write_filter_module.c" />
+    <ClCompile Include="src\os\win32\ngx_alloc.c" />
+    <ClCompile Include="src\os\win32\ngx_dlopen.c" />
+    <ClCompile Include="src\os\win32\ngx_errno.c" />
+    <ClCompile Include="src\os\win32\ngx_event_log.c" />
+    <ClCompile Include="src\os\win32\ngx_files.c" />
+    <ClCompile Include="src\os\win32\ngx_process.c" />
+    <ClCompile Include="src\os\win32\ngx_process_cycle.c" />
+    <ClCompile Include="src\os\win32\ngx_shmem.c" />
+    <ClCompile Include="src\os\win32\ngx_socket.c" />
+    <ClCompile Include="src\os\win32\ngx_stat.c" />
+    <ClCompile Include="src\os\win32\ngx_thread.c" />
+    <ClCompile Include="src\os\win32\ngx_time.c" />
+    <ClCompile Include="src\os\win32\ngx_udp_wsarecv.c" />
+    <ClCompile Include="src\os\win32\ngx_user.c" />
+    <ClCompile Include="src\os\win32\ngx_win32_init.c" />
+    <ClCompile Include="src\os\win32\ngx_wsarecv.c" />
+    <ClCompile Include="src\os\win32\ngx_wsarecv_chain.c" />
+    <ClCompile Include="src\os\win32\ngx_wsasend.c" />
+    <ClCompile Include="src\os\win32\ngx_wsasend_chain.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\nginx-rtmp-module\dash\ngx_rtmp_mp4.h" />
+    <ClInclude Include="..\nginx-rtmp-module\hls\ngx_rtmp_mpegts.h" />
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp.h" />
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_amf.h" />
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_bandwidth.h" />
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_bitop.h" />
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_cmd_module.h" />
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_codec_module.h" />
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_eval.h" />
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_live_module.h" />
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_netcall_module.h" />
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_play_module.h" />
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_proxy_protocol.h" />
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_record_module.h" />
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_relay_module.h" />
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_streams.h" />
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_version.h" />
+    <ClInclude Include="..\pcre\config.h" />
+    <ClInclude Include="..\pcre\pcre.h" />
+    <ClInclude Include="..\pcre\pcrecpp.h" />
+    <ClInclude Include="..\pcre\pcrecpp_internal.h" />
+    <ClInclude Include="..\pcre\pcreposix.h" />
+    <ClInclude Include="..\pcre\pcre_internal.h" />
+    <ClInclude Include="..\pcre\pcre_scanner.h" />
+    <ClInclude Include="..\pcre\ucp.h" />
+    <ClInclude Include="..\zlib\crc32.h" />
+    <ClInclude Include="..\zlib\deflate.h" />
+    <ClInclude Include="..\zlib\gzguts.h" />
+    <ClInclude Include="..\zlib\inffast.h" />
+    <ClInclude Include="..\zlib\inffixed.h" />
+    <ClInclude Include="..\zlib\inflate.h" />
+    <ClInclude Include="..\zlib\inftrees.h" />
+    <ClInclude Include="..\zlib\trees.h" />
+    <ClInclude Include="..\zlib\zconf.h" />
+    <ClInclude Include="..\zlib\zlib.h" />
+    <ClInclude Include="..\zlib\zutil.h" />
+    <ClInclude Include="build\ngx_auto_config.h" />
+    <ClInclude Include="build\ngx_auto_headers.h" />
+    <ClInclude Include="include\openssl\aes.h" />
+    <ClInclude Include="include\openssl\asn1.h" />
+    <ClInclude Include="include\openssl\asn1t.h" />
+    <ClInclude Include="include\openssl\asn1_mac.h" />
+    <ClInclude Include="include\openssl\async.h" />
+    <ClInclude Include="include\openssl\bio.h" />
+    <ClInclude Include="include\openssl\blowfish.h" />
+    <ClInclude Include="include\openssl\bn.h" />
+    <ClInclude Include="include\openssl\buffer.h" />
+    <ClInclude Include="include\openssl\camellia.h" />
+    <ClInclude Include="include\openssl\cast.h" />
+    <ClInclude Include="include\openssl\cmac.h" />
+    <ClInclude Include="include\openssl\cms.h" />
+    <ClInclude Include="include\openssl\comp.h" />
+    <ClInclude Include="include\openssl\conf.h" />
+    <ClInclude Include="include\openssl\conf_api.h" />
+    <ClInclude Include="include\openssl\crypto.h" />
+    <ClInclude Include="include\openssl\ct.h" />
+    <ClInclude Include="include\openssl\des.h" />
+    <ClInclude Include="include\openssl\dh.h" />
+    <ClInclude Include="include\openssl\dsa.h" />
+    <ClInclude Include="include\openssl\dtls1.h" />
+    <ClInclude Include="include\openssl\ebcdic.h" />
+    <ClInclude Include="include\openssl\ec.h" />
+    <ClInclude Include="include\openssl\ecdh.h" />
+    <ClInclude Include="include\openssl\ecdsa.h" />
+    <ClInclude Include="include\openssl\engine.h" />
+    <ClInclude Include="include\openssl\err.h" />
+    <ClInclude Include="include\openssl\evp.h" />
+    <ClInclude Include="include\openssl\e_os2.h" />
+    <ClInclude Include="include\openssl\hmac.h" />
+    <ClInclude Include="include\openssl\idea.h" />
+    <ClInclude Include="include\openssl\kdf.h" />
+    <ClInclude Include="include\openssl\lhash.h" />
+    <ClInclude Include="include\openssl\md2.h" />
+    <ClInclude Include="include\openssl\md4.h" />
+    <ClInclude Include="include\openssl\md5.h" />
+    <ClInclude Include="include\openssl\mdc2.h" />
+    <ClInclude Include="include\openssl\modes.h" />
+    <ClInclude Include="include\openssl\objects.h" />
+    <ClInclude Include="include\openssl\obj_mac.h" />
+    <ClInclude Include="include\openssl\ocsp.h" />
+    <ClInclude Include="include\openssl\opensslconf.h" />
+    <ClInclude Include="include\openssl\opensslv.h" />
+    <ClInclude Include="include\openssl\ossl_typ.h" />
+    <ClInclude Include="include\openssl\pem.h" />
+    <ClInclude Include="include\openssl\pem2.h" />
+    <ClInclude Include="include\openssl\pkcs12.h" />
+    <ClInclude Include="include\openssl\pkcs7.h" />
+    <ClInclude Include="include\openssl\rand.h" />
+    <ClInclude Include="include\openssl\rc2.h" />
+    <ClInclude Include="include\openssl\rc4.h" />
+    <ClInclude Include="include\openssl\rc5.h" />
+    <ClInclude Include="include\openssl\ripemd.h" />
+    <ClInclude Include="include\openssl\rsa.h" />
+    <ClInclude Include="include\openssl\safestack.h" />
+    <ClInclude Include="include\openssl\seed.h" />
+    <ClInclude Include="include\openssl\sha.h" />
+    <ClInclude Include="include\openssl\srp.h" />
+    <ClInclude Include="include\openssl\srtp.h" />
+    <ClInclude Include="include\openssl\ssl.h" />
+    <ClInclude Include="include\openssl\ssl2.h" />
+    <ClInclude Include="include\openssl\ssl3.h" />
+    <ClInclude Include="include\openssl\stack.h" />
+    <ClInclude Include="include\openssl\symhacks.h" />
+    <ClInclude Include="include\openssl\tls1.h" />
+    <ClInclude Include="include\openssl\ts.h" />
+    <ClInclude Include="include\openssl\txt_db.h" />
+    <ClInclude Include="include\openssl\ui.h" />
+    <ClInclude Include="include\openssl\whrlpool.h" />
+    <ClInclude Include="include\openssl\x509.h" />
+    <ClInclude Include="include\openssl\x509v3.h" />
+    <ClInclude Include="include\openssl\x509_vfy.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\core\nginx.h" />
+    <ClInclude Include="src\core\ngx_array.h" />
+    <ClInclude Include="src\core\ngx_buf.h" />
+    <ClInclude Include="src\core\ngx_config.h" />
+    <ClInclude Include="src\core\ngx_conf_file.h" />
+    <ClInclude Include="src\core\ngx_connection.h" />
+    <ClInclude Include="src\core\ngx_core.h" />
+    <ClInclude Include="src\core\ngx_crc.h" />
+    <ClInclude Include="src\core\ngx_crc32.h" />
+    <ClInclude Include="src\core\ngx_crypt.h" />
+    <ClInclude Include="src\core\ngx_cycle.h" />
+    <ClInclude Include="src\core\ngx_file.h" />
+    <ClInclude Include="src\core\ngx_hash.h" />
+    <ClInclude Include="src\core\ngx_inet.h" />
+    <ClInclude Include="src\core\ngx_list.h" />
+    <ClInclude Include="src\core\ngx_log.h" />
+    <ClInclude Include="src\core\ngx_md5.h" />
+    <ClInclude Include="src\core\ngx_module.h" />
+    <ClInclude Include="src\core\ngx_murmurhash.h" />
+    <ClInclude Include="src\core\ngx_open_file_cache.h" />
+    <ClInclude Include="src\core\ngx_palloc.h" />
+    <ClInclude Include="src\core\ngx_parse.h" />
+    <ClInclude Include="src\core\ngx_parse_time.h" />
+    <ClInclude Include="src\core\ngx_proxy_protocol.h" />
+    <ClInclude Include="src\core\ngx_queue.h" />
+    <ClInclude Include="src\core\ngx_radix_tree.h" />
+    <ClInclude Include="src\core\ngx_rbtree.h" />
+    <ClInclude Include="src\core\ngx_regex.h" />
+    <ClInclude Include="src\core\ngx_resolver.h" />
+    <ClInclude Include="src\core\ngx_rwlock.h" />
+    <ClInclude Include="src\core\ngx_sha1.h" />
+    <ClInclude Include="src\core\ngx_shmtx.h" />
+    <ClInclude Include="src\core\ngx_slab.h" />
+    <ClInclude Include="src\core\ngx_string.h" />
+    <ClInclude Include="src\core\ngx_syslog.h" />
+    <ClInclude Include="src\core\ngx_thread_pool.h" />
+    <ClInclude Include="src\core\ngx_times.h" />
+    <ClInclude Include="src\event\modules\ngx_iocp_module.h" />
+    <ClInclude Include="src\event\ngx_event.h" />
+    <ClInclude Include="src\event\ngx_event_connect.h" />
+    <ClInclude Include="src\event\ngx_event_openssl.h" />
+    <ClInclude Include="src\event\ngx_event_pipe.h" />
+    <ClInclude Include="src\event\ngx_event_posted.h" />
+    <ClInclude Include="src\event\ngx_event_timer.h" />
+    <ClInclude Include="src\http\modules\ngx_http_ssi_filter_module.h" />
+    <ClInclude Include="src\http\modules\ngx_http_ssl_module.h" />
+    <ClInclude Include="src\http\ngx_http.h" />
+    <ClInclude Include="src\http\ngx_http_cache.h" />
+    <ClInclude Include="src\http\ngx_http_config.h" />
+    <ClInclude Include="src\http\ngx_http_core_module.h" />
+    <ClInclude Include="src\http\ngx_http_request.h" />
+    <ClInclude Include="src\http\ngx_http_script.h" />
+    <ClInclude Include="src\http\ngx_http_upstream.h" />
+    <ClInclude Include="src\http\ngx_http_upstream_round_robin.h" />
+    <ClInclude Include="src\http\ngx_http_variables.h" />
+    <ClInclude Include="src\os\win32\ngx_alloc.h" />
+    <ClInclude Include="src\os\win32\ngx_atomic.h" />
+    <ClInclude Include="src\os\win32\ngx_dlopen.h" />
+    <ClInclude Include="src\os\win32\ngx_errno.h" />
+    <ClInclude Include="src\os\win32\ngx_files.h" />
+    <ClInclude Include="src\os\win32\ngx_os.h" />
+    <ClInclude Include="src\os\win32\ngx_process.h" />
+    <ClInclude Include="src\os\win32\ngx_process_cycle.h" />
+    <ClInclude Include="src\os\win32\ngx_shmem.h" />
+    <ClInclude Include="src\os\win32\ngx_socket.h" />
+    <ClInclude Include="src\os\win32\ngx_thread.h" />
+    <ClInclude Include="src\os\win32\ngx_time.h" />
+    <ClInclude Include="src\os\win32\ngx_user.h" />
+    <ClInclude Include="src\os\win32\ngx_win32_config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nginx_window.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="CarEye.ico" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{C19D2CB8-FAB9-4FE6-805E-0D39E15F3817}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>nginxwindow</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <CustomBuildBeforeTargets>
+    </CustomBuildBeforeTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>$(SolutionDir)/generate;$(SolutionDir)/../zlib;$(SolutionDir)/include;$(SolutionDir)/../pcre;$(SolutionDir)/src/core;$(SolutionDir)/src/event;$(SolutionDir)/src/event/modules;$(SolutionDir)/src/http;$(SolutionDir)/src/http/modules;$(SolutionDir)/src/os/win32;$(SolutionDir)/build;$(SolutionDir)/../nginx-rtmp-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>-DFD_SETSIZE=1024 -DNO_SYS_TYPES_H %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)/libs/openssl;$(SolutionDir)/../pcre;$(SolutionDir)/../zlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;legacy_stdio_definitions.lib;pcre.lib;libcrypto32MTd.lib;libssl32MTd.lib;crypt32.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <TreatOutputAsContent>
+      </TreatOutputAsContent>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>$(SolutionDir)/generate;$(SolutionDir)/../zlib;$(SolutionDir)/include;$(SolutionDir)/../pcre;$(SolutionDir)/src/core;$(SolutionDir)/src/event;$(SolutionDir)/src/event/modules;$(SolutionDir)/src/http;$(SolutionDir)/src/http/modules;$(SolutionDir)/src/os/win32;$(SolutionDir)/build;$(SolutionDir)/../nginx-rtmp-module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-DFD_SETSIZE=1024 -DNO_SYS_TYPES_H %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)/libs/openssl;$(SolutionDir)/../pcre;$(SolutionDir)/../zlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;legacy_stdio_definitions.lib;pcre.lib;libcrypto32MT.lib;libssl32MT.lib;crypt32.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

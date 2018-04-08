@@ -1,0 +1,1126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\src%255chttp%255cmodules">
+      <UniqueIdentifier>{34b8a4e8-4bd2-48cc-8ad8-fe7a55665260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\src/os/win32">
+      <UniqueIdentifier>{bcbf15db-2d42-42b6-b902-52861b1f4a69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src%255cos%255cwin32">
+      <UniqueIdentifier>{c7b39e54-5bdb-47f3-9e42-0e4be2886a3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src%255ccore">
+      <UniqueIdentifier>{246e9838-233b-4a36-b8e9-840dfb29346c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src%255cevent">
+      <UniqueIdentifier>{42dc51f4-c89f-42a9-9e1b-b68658aca118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src%255chttp">
+      <UniqueIdentifier>{4595a907-526c-4a43-bfe8-5f2ccffb4b39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src%255cevent%255cmodules">
+      <UniqueIdentifier>{fd8e97aa-864b-4eb7-9d8f-e251cfeb8463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\src/core">
+      <UniqueIdentifier>{52acc837-a128-4a8c-9967-3b1220f3d0de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\src/event">
+      <UniqueIdentifier>{e0673cb1-09fa-4a59-bfa3-a5fea0fcb65f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\src/event/modules">
+      <UniqueIdentifier>{6b36bbcf-b769-4c73-959d-4e589d00e94b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\src/http">
+      <UniqueIdentifier>{363ad0f2-6e32-43d2-b1f7-72f63706f8c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\src/http/modules">
+      <UniqueIdentifier>{f98aba19-03bb-4055-bdb9-ec393a97c64b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\generate">
+      <UniqueIdentifier>{7228e9e9-8a41-4202-8cdc-d50355e18540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\generate">
+      <UniqueIdentifier>{ff369b47-c0cb-4b0d-b1f3-233a6d407646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\nginx-rtmp-module">
+      <UniqueIdentifier>{84b67ded-3fca-45b8-85a4-6af4ea4ff23a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\pcre">
+      <UniqueIdentifier>{a6d46e45-0ac0-4a62-8c95-ba3668cdd12f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\openssl">
+      <UniqueIdentifier>{f530cebc-9436-471e-ba8d-7ba74bb8a81d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\zlib">
+      <UniqueIdentifier>{e685744b-c60c-4793-9c63-9de3633440c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\nginx-rtmp-module">
+      <UniqueIdentifier>{507e239b-786f-43d5-9141-6b5e8d1d4814}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\nginx-rtmp-module%255chls">
+      <UniqueIdentifier>{ff609fcc-a24b-4e71-a648-ffc66096331e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\nginx-rtmp-module/hls">
+      <UniqueIdentifier>{41c65f44-23a9-4645-b9f7-9d8c5dbea266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\nginx-rtmp-module%255cdash">
+      <UniqueIdentifier>{0f22ea00-8e86-44e7-9808-b0b76a51926f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\nginx-rtmp-module/dash">
+      <UniqueIdentifier>{1f761d24-2e29-4e8d-bf86-f5b36ffca0be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core\nginx.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_array.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_buf.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_conf_file.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_connection.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_cpuinfo.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_crc32.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_crypt.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_cycle.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_file.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_hash.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_inet.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_list.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_log.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_md5.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_module.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_murmurhash.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_open_file_cache.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_output_chain.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_palloc.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_parse.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_parse_time.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_proxy_protocol.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_queue.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_radix_tree.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_rbtree.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_regex.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_resolver.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_rwlock.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_sha1.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_shmtx.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_slab.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_spinlock.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_string.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_syslog.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_times.c">
+      <Filter>源文件\src%255ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\ngx_event.c">
+      <Filter>源文件\src%255cevent</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\ngx_event_accept.c">
+      <Filter>源文件\src%255cevent</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\ngx_event_acceptex.c">
+      <Filter>源文件\src%255cevent</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\ngx_event_connect.c">
+      <Filter>源文件\src%255cevent</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\ngx_event_openssl.c">
+      <Filter>源文件\src%255cevent</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\ngx_event_openssl_stapling.c">
+      <Filter>源文件\src%255cevent</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\ngx_event_pipe.c">
+      <Filter>源文件\src%255cevent</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\ngx_event_posted.c">
+      <Filter>源文件\src%255cevent</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\ngx_event_timer.c">
+      <Filter>源文件\src%255cevent</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\modules\ngx_iocp_module.c">
+      <Filter>源文件\src%255cevent%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\modules\ngx_win32_select_module.c">
+      <Filter>源文件\src%255cevent%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http.c">
+      <Filter>源文件\src%255chttp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_copy_filter_module.c">
+      <Filter>源文件\src%255chttp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_core_module.c">
+      <Filter>源文件\src%255chttp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_file_cache.c">
+      <Filter>源文件\src%255chttp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_header_filter_module.c">
+      <Filter>源文件\src%255chttp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_parse.c">
+      <Filter>源文件\src%255chttp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_postpone_filter_module.c">
+      <Filter>源文件\src%255chttp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_request.c">
+      <Filter>源文件\src%255chttp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_request_body.c">
+      <Filter>源文件\src%255chttp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_script.c">
+      <Filter>源文件\src%255chttp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_special_response.c">
+      <Filter>源文件\src%255chttp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_upstream.c">
+      <Filter>源文件\src%255chttp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_upstream_round_robin.c">
+      <Filter>源文件\src%255chttp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_variables.c">
+      <Filter>源文件\src%255chttp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_write_filter_module.c">
+      <Filter>源文件\src%255chttp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_access_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_addition_filter_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_auth_basic_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_auth_request_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_autoindex_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_browser_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_charset_filter_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_chunked_filter_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_empty_gif_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_fastcgi_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_flv_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_geo_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_gunzip_filter_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_gzip_filter_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_gzip_static_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_headers_filter_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_index_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_limit_conn_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_limit_req_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_log_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_map_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_memcached_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_mp4_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_not_modified_filter_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_proxy_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_random_index_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_range_filter_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_referer_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_rewrite_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_scgi_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_secure_link_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_slice_filter_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_split_clients_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_ssi_filter_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_ssl_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_static_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_sub_filter_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_upstream_hash_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_upstream_ip_hash_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_upstream_keepalive_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_upstream_least_conn_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_upstream_zone_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_userid_filter_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\modules\ngx_http_uwsgi_module.c">
+      <Filter>源文件\src%255chttp%255cmodules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_alloc.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_dlopen.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_errno.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_event_log.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_files.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_process.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_process_cycle.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_shmem.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_socket.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_stat.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_thread.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_time.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_udp_wsarecv.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_user.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_win32_init.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_wsarecv.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_wsarecv_chain.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_wsasend.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_wsasend_chain.c">
+      <Filter>源文件\src%255cos%255cwin32</Filter>
+    </ClCompile>
+    <ClCompile Include="build\ngx_modules.c">
+      <Filter>源文件\generate</Filter>
+    </ClCompile>
+    <ClCompile Include="build\ngx_pch.c">
+      <Filter>源文件\generate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_access_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_amf.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_auto_push_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_bandwidth.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_bitop.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_cmd_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_codec_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_control_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_core_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_eval.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_exec_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_flv_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_handler.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_handshake.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_init.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_limit_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_live_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_log_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_mp4_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_netcall_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_notify_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_play_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_proxy_protocol.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_receive.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_record_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_relay_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_send.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_shared.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\ngx_rtmp_stat_module.c">
+      <Filter>源文件\nginx-rtmp-module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\hls\ngx_rtmp_hls_module.c">
+      <Filter>源文件\nginx-rtmp-module%255chls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\hls\ngx_rtmp_mpegts.c">
+      <Filter>源文件\nginx-rtmp-module%255chls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\dash\ngx_rtmp_dash_module.c">
+      <Filter>源文件\nginx-rtmp-module%255cdash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nginx-rtmp-module\dash\ngx_rtmp_mp4.c">
+      <Filter>源文件\nginx-rtmp-module%255cdash</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\nginx.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_array.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_buf.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_conf_file.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_config.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_connection.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_core.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_crc.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_crc32.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_crypt.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_cycle.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_file.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_hash.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_inet.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_list.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_log.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_md5.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_module.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_murmurhash.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_open_file_cache.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_palloc.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_parse.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_parse_time.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_proxy_protocol.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_queue.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_radix_tree.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_rbtree.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_regex.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_resolver.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_rwlock.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_sha1.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_shmtx.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_slab.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_string.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_syslog.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_thread_pool.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ngx_times.h">
+      <Filter>头文件\src/core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\event\ngx_event.h">
+      <Filter>头文件\src/event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\event\ngx_event_connect.h">
+      <Filter>头文件\src/event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\event\ngx_event_openssl.h">
+      <Filter>头文件\src/event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\event\ngx_event_pipe.h">
+      <Filter>头文件\src/event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\event\ngx_event_posted.h">
+      <Filter>头文件\src/event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\event\ngx_event_timer.h">
+      <Filter>头文件\src/event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\event\modules\ngx_iocp_module.h">
+      <Filter>头文件\src/event/modules</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\ngx_http.h">
+      <Filter>头文件\src/http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\ngx_http_cache.h">
+      <Filter>头文件\src/http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\ngx_http_config.h">
+      <Filter>头文件\src/http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\ngx_http_core_module.h">
+      <Filter>头文件\src/http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\ngx_http_request.h">
+      <Filter>头文件\src/http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\ngx_http_script.h">
+      <Filter>头文件\src/http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\ngx_http_upstream.h">
+      <Filter>头文件\src/http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\ngx_http_upstream_round_robin.h">
+      <Filter>头文件\src/http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\ngx_http_variables.h">
+      <Filter>头文件\src/http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\modules\ngx_http_ssi_filter_module.h">
+      <Filter>头文件\src/http/modules</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\modules\ngx_http_ssl_module.h">
+      <Filter>头文件\src/http/modules</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os\win32\ngx_alloc.h">
+      <Filter>头文件\src/os/win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os\win32\ngx_atomic.h">
+      <Filter>头文件\src/os/win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os\win32\ngx_dlopen.h">
+      <Filter>头文件\src/os/win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os\win32\ngx_errno.h">
+      <Filter>头文件\src/os/win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os\win32\ngx_files.h">
+      <Filter>头文件\src/os/win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os\win32\ngx_os.h">
+      <Filter>头文件\src/os/win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os\win32\ngx_process.h">
+      <Filter>头文件\src/os/win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os\win32\ngx_process_cycle.h">
+      <Filter>头文件\src/os/win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os\win32\ngx_shmem.h">
+      <Filter>头文件\src/os/win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os\win32\ngx_socket.h">
+      <Filter>头文件\src/os/win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os\win32\ngx_thread.h">
+      <Filter>头文件\src/os/win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os\win32\ngx_time.h">
+      <Filter>头文件\src/os/win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os\win32\ngx_user.h">
+      <Filter>头文件\src/os/win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os\win32\ngx_win32_config.h">
+      <Filter>头文件\src/os/win32</Filter>
+    </ClInclude>
+    <ClInclude Include="build\ngx_auto_config.h">
+      <Filter>头文件\generate</Filter>
+    </ClInclude>
+    <ClInclude Include="build\ngx_auto_headers.h">
+      <Filter>头文件\generate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp.h">
+      <Filter>头文件\nginx-rtmp-module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_amf.h">
+      <Filter>头文件\nginx-rtmp-module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_bandwidth.h">
+      <Filter>头文件\nginx-rtmp-module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_bitop.h">
+      <Filter>头文件\nginx-rtmp-module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_cmd_module.h">
+      <Filter>头文件\nginx-rtmp-module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_codec_module.h">
+      <Filter>头文件\nginx-rtmp-module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_eval.h">
+      <Filter>头文件\nginx-rtmp-module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_live_module.h">
+      <Filter>头文件\nginx-rtmp-module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_netcall_module.h">
+      <Filter>头文件\nginx-rtmp-module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_play_module.h">
+      <Filter>头文件\nginx-rtmp-module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_proxy_protocol.h">
+      <Filter>头文件\nginx-rtmp-module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_record_module.h">
+      <Filter>头文件\nginx-rtmp-module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_relay_module.h">
+      <Filter>头文件\nginx-rtmp-module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_streams.h">
+      <Filter>头文件\nginx-rtmp-module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\ngx_rtmp_version.h">
+      <Filter>头文件\nginx-rtmp-module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pcre\config.h">
+      <Filter>头文件\pcre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pcre\pcre.h">
+      <Filter>头文件\pcre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pcre\pcre_internal.h">
+      <Filter>头文件\pcre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pcre\pcre_scanner.h">
+      <Filter>头文件\pcre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pcre\pcrecpp.h">
+      <Filter>头文件\pcre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pcre\pcrecpp_internal.h">
+      <Filter>头文件\pcre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pcre\pcreposix.h">
+      <Filter>头文件\pcre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pcre\ucp.h">
+      <Filter>头文件\pcre</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\aes.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\asn1.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\asn1_mac.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\asn1t.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\async.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\bio.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\blowfish.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\bn.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\buffer.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\camellia.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\cast.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\cmac.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\cms.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\comp.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\conf.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\conf_api.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\crypto.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ct.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\des.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\dh.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\dsa.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\dtls1.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\e_os2.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ebcdic.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ec.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ecdh.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ecdsa.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\engine.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\err.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\evp.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\hmac.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\idea.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\kdf.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\lhash.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\md2.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\md4.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\md5.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\mdc2.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\modes.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\obj_mac.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\objects.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ocsp.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\opensslconf.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\opensslv.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ossl_typ.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pem.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pem2.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pkcs7.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pkcs12.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rand.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rc2.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rc4.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rc5.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ripemd.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rsa.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\safestack.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\seed.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\sha.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\srp.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\srtp.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ssl.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ssl2.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ssl3.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\stack.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\symhacks.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\tls1.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ts.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\txt_db.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ui.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\whrlpool.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\x509.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\x509_vfy.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\x509v3.h">
+      <Filter>头文件\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\crc32.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\deflate.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\gzguts.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\inffast.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\inffixed.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\inflate.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\inftrees.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\trees.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\zconf.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\zlib.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zlib\zutil.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\hls\ngx_rtmp_mpegts.h">
+      <Filter>头文件\nginx-rtmp-module/hls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nginx-rtmp-module\dash\ngx_rtmp_mp4.h">
+      <Filter>头文件\nginx-rtmp-module/dash</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nginx_window.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="CarEye.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
