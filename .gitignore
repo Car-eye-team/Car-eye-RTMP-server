@@ -1,0 +1,7 @@
+/source/nginx_windows/.vs
+/source/nginx_windows/Debug
+/source/nginx_windows/Release
+/source/pcre/*.obj
+/source/zlib/*.obj
+/source/pcre/pcre.lib
+/source/zlib/zlib.lib
