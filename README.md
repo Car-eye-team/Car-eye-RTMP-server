@@ -1,5 +1,6 @@
 # Car-eye-RTMP-server
 
+## 服务器功能
 Car-eye-RTMP-server 是基于Nginx开发的一个开源服务器，功能特点
 1.   支持音视频直播
 2.   支持flv/mp4视频格式，输入可以是文件或者HTTP流
@@ -17,7 +18,7 @@ Car-eye-RTMP-server 是基于Nginx开发的一个开源服务器，功能特点
 14.  支持跨平台 Linux/FreeBSD/MacOS
 
 
-编译nginx
+## 编译nginx
 ./configure --prefix=/opt/nginx --add-module=../nginx-rtmp-module  --with-pcre=../pcre  --with-openssl=../openssl --with-zlib=../zlib --with-http_stub_status_module
 
 安装nginx，到/opt/nginx目录下
@@ -67,5 +68,7 @@ file: "rtmp://192.168.12.178/live/livestream"
 点播rtmp
 file: "rtmp://192.168.12.178/vod/test.flv"
 
-Car-eye 开源官方网站www.car-eye.cn car-eye 开源技术交流群：590411159
+## 联系我们
+
+car-eye车辆管理平台：www.car-eye.cn; car-eye开源平台网址：https://github.com/Car-eye-team 有关car-eye 问题咨询可以加QQ群590411159。
 
