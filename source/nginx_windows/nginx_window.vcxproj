@@ -429,8 +429,9 @@
       </TreatOutputAsContent>
     </CustomBuildStep>
     <PreBuildEvent>
-      <Command>
-      </Command>
+      <Command>nmake -f auto/lib/pcre/makefile.msvc PCRE="../pcre" CPU_OPT="" LIBC=-MT
+nmake -f auto/lib/zlib/makefile.msvc CPU_OPT="" LIBC=-MT ZLIB="../zlib"</Command>
+      <Message>生成依赖库</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -456,6 +457,13 @@
       <AdditionalLibraryDirectories>$(SolutionDir)/libs/openssl;$(SolutionDir)/../pcre;$(SolutionDir)/../zlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>ws2_32.lib;legacy_stdio_definitions.lib;pcre.lib;libcrypto32MT.lib;libssl32MT.lib;crypt32.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PreBuildEvent>
+      <Command>nmake -f auto/lib/pcre/makefile.msvc PCRE="../pcre" CPU_OPT="" LIBC=-MT
+nmake -f auto/lib/zlib/makefile.msvc CPU_OPT="" LIBC=-MT ZLIB="../zlib"</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>生成依赖库</Message>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
