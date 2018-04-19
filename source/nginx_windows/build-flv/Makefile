@@ -1537,8 +1537,8 @@ build-flv/ngx_config.pch:	src/core/ngx_config.h src/os/win32/ngx_win32_config.h 
 	$(MAKE) -f auto/lib/pcre/makefile.msvc PCRE="../pcre" pcre.h
 
 
-./include/openssl/include/openssl/ssl.h:	build-flv/Makefile
-	$(MAKE) -f auto/lib/openssl/makefile.msvc					OPENSSL="./include" OPENSSL_OPT=""
+#./include/openssl/include/openssl/ssl.h:	build-flv/Makefile
+#	$(MAKE) -f auto/lib/openssl/makefile.msvc					OPENSSL="./include" OPENSSL_OPT=""
 
 
 ../zlib/zlib.lib:	build-flv/Makefile

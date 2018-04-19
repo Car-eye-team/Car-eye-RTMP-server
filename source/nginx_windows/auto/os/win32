@@ -24,7 +24,7 @@ case "$NGX_CC_NAME" in
     ;;
 
     *)
-        CORE_LIBS="$CORE_LIBS advapi32.lib ws2_32.lib"
+        CORE_LIBS="$CORE_LIBS advapi32.lib ws2_32.lib legacy_stdio_definitions.lib"
     ;;
 
 esac

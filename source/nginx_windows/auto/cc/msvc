@@ -14,6 +14,8 @@
 NGX_MSVC_VER=`$NGX_WINE $CC 2>&1 | grep 'Compiler Version' 2>&1 \
                                  | sed -e 's/^.* Version \(.*\)/\1/'`
 
+# Wgj 添加 VS2017对应cl版本为19.13
+NGX_MSVC_VER=19.13
 echo " + cl version: $NGX_MSVC_VER"
 
 have=NGX_COMPILER value="\"cl $NGX_MSVC_VER\"" . auto/define

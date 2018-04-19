@@ -17,7 +17,9 @@ echo > $NGX_AUTO_HEADERS_H
 echo > $NGX_AUTOCONF_ERR
 
 echo "#define NGX_CONFIGURE \"$NGX_CONFIGURE\"" > $NGX_AUTO_CONFIG_H
-
+echo "" >> $NGX_AUTO_CONFIG_H
+echo "// 解决 无法解析的外部符号 ___iob_func的错误 VS2015之后版本进行了变更" >> $NGX_AUTO_CONFIG_H
+echo "FILE* __cdecl __iob_func(unsigned i);" >> $NGX_AUTO_CONFIG_H
 
 if [ $NGX_DEBUG = YES ]; then
     have=NGX_DEBUG . auto/have

@@ -13,8 +13,8 @@ if [ $OPENSSL != NONE ]; then
 
             CFLAGS="$CFLAGS -DNO_SYS_TYPES_H"
 
-            CORE_INCS="$CORE_INCS $OPENSSL/openssl/include"
-            CORE_DEPS="$CORE_DEPS $OPENSSL/openssl/include/openssl/ssl.h"
+            CORE_INCS="$CORE_INCS $OPENSSL"
+            CORE_DEPS="$CORE_DEPS $OPENSSL/openssl/ssl.h"
 
             if [ -f $OPENSSL/ms/do_ms.bat ]; then
                 # before OpenSSL 1.1.0
@@ -22,8 +22,8 @@ if [ $OPENSSL != NONE ]; then
                 CORE_LIBS="$CORE_LIBS $OPENSSL/openssl/lib/libeay32.lib"
             else
                 # OpenSSL 1.1.0+
-                CORE_LIBS="$CORE_LIBS $OPENSSL/openssl/lib/libssl.lib"
-                CORE_LIBS="$CORE_LIBS $OPENSSL/openssl/lib/libcrypto.lib"
+                CORE_LIBS="$CORE_LIBS $OPENSSL/../libs/openssl/libcrypto32MT.lib"
+                CORE_LIBS="$CORE_LIBS $OPENSSL/../libs/openssl/libssl32MT.lib"
             fi
 
             # libeay32.lib requires gdi32.lib

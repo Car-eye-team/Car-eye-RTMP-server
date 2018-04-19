@@ -471,6 +471,11 @@ fi
 
 if test -n "$NGX_PCH"; then
     echo "#include <ngx_config.h>" > $NGX_OBJS/ngx_pch.c
+    echo "" >> $NGX_OBJS/ngx_pch.c
+    echo "// 解决 无法解析的外部符号 ___iob_func的错误 VS2015之后版本进行了变更" >> $NGX_OBJS/ngx_pch.c
+    echo "FILE* __cdecl __iob_func(unsigned i){" >> $NGX_OBJS/ngx_pch.c
+    echo "    return __acrt_iob_func(i);" >> $NGX_OBJS/ngx_pch.c
+    echo "}" >> $NGX_OBJS/ngx_pch.c
 
     ngx_pch="src/core/ngx_config.h $OS_CONFIG $NGX_OBJS/ngx_auto_config.h"
     ngx_pch=`echo "$NGX_PCH:	$ngx_pch" | sed -e "s/\//$ngx_regex_dirsep/g"`

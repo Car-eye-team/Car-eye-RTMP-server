@@ -1,0 +1,24 @@
+添加rtmp模块的配置指令
+auto/configure --with-cc=cl --builddir=build --prefix= \
+--conf-path=conf/nginx.conf --pid-path=logs/nginx.pid \
+--http-log-path=logs/access.log --error-log-path=logs/error.log \
+--sbin-path=nginx.exe --http-client-body-temp-path=temp/client_body_temp \
+--http-proxy-temp-path=temp/proxy_temp \
+--http-fastcgi-temp-path=temp/fastcgi_temp \
+--with-cc-opt=-DFD_SETSIZE=1024 --with-pcre=../pcre \
+--with-zlib=../zlib --with-openssl=./include \
+--with-select_module --with-http_ssl_module \
+--with-http_sub_module \
+--add-module=../nginx-rtmp-module
+添加http-flv模块的配置指令
+auto/configure --with-cc=cl --builddir=build --prefix= \
+--conf-path=conf/nginx.conf --pid-path=logs/nginx.pid \
+--http-log-path=logs/access.log --error-log-path=logs/error.log \
+--sbin-path=nginx.exe --http-client-body-temp-path=temp/client_body_temp \
+--http-proxy-temp-path=temp/proxy_temp \
+--http-fastcgi-temp-path=temp/fastcgi_temp \
+--with-cc-opt=-DFD_SETSIZE=1024 --with-pcre=../pcre \
+--with-zlib=../zlib --with-openssl=./include \
+--with-select_module --with-http_ssl_module \
+--with-http_sub_module \
+--add-module=../../../car-eye-http-flv-module

@@ -9,8 +9,8 @@ case "$CC" in
 
         cat << END                                            >> $NGX_MAKEFILE
 
-$OPENSSL/openssl/include/openssl/ssl.h:	$NGX_MAKEFILE
-	\$(MAKE) -f auto/lib/openssl/makefile.msvc			\
+#$OPENSSL/openssl/include/openssl/ssl.h:	$NGX_MAKEFILE
+#	\$(MAKE) -f auto/lib/openssl/makefile.msvc			\
 		OPENSSL="$OPENSSL" OPENSSL_OPT="$OPENSSL_OPT"
 
 END
