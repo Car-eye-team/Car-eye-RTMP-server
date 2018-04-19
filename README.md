@@ -80,4 +80,4 @@ car-eye技术交流QQ群: 590411159      
 ![](https://github.com/Car-eye-team/Car-eye-server/blob/master/car-server/doc/QQ.jpg)  
 
 
-
+CopyRight©  car-eye 开源团队 2018
