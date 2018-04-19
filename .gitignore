@@ -5,3 +5,5 @@
 /source/zlib/*.obj
 /source/pcre/pcre.lib
 /source/zlib/zlib.lib
+/source/nginx_windows/Makefile
+/source/nginx_windows/vc140.pdb
