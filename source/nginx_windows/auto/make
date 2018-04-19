@@ -224,7 +224,7 @@ ngx_main_link=${MAIN_LINK:+`echo $MAIN_LINK \
 
 cat << END                                                    >> $NGX_MAKEFILE
 
-build:	binary modules manpage
+build:	binary modules #manpage
 
 binary:	$NGX_OBJS${ngx_dirsep}nginx$ngx_binext
 
