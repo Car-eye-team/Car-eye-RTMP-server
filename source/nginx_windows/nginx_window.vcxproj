@@ -367,7 +367,7 @@
     <ProjectGuid>{C19D2CB8-FAB9-4FE6-805E-0D39E15F3817}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>nginxwindow</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -430,6 +430,7 @@
     </CustomBuildStep>
     <PreBuildEvent>
       <Command>nmake -f auto/lib/pcre/makefile.msvc PCRE="../pcre" CPU_OPT="" LIBC=-MT
+
 nmake -f auto/lib/zlib/makefile.msvc CPU_OPT="" LIBC=-MT ZLIB="../zlib"</Command>
       <Message>生成依赖库</Message>
     </PreBuildEvent>

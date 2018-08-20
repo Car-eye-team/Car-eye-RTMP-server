@@ -13,26 +13,8 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="源文件\src%255chttp%255cmodules">
-      <UniqueIdentifier>{34b8a4e8-4bd2-48cc-8ad8-fe7a55665260}</UniqueIdentifier>
-    </Filter>
     <Filter Include="头文件\src/os/win32">
       <UniqueIdentifier>{bcbf15db-2d42-42b6-b902-52861b1f4a69}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\src%255cos%255cwin32">
-      <UniqueIdentifier>{c7b39e54-5bdb-47f3-9e42-0e4be2886a3b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\src%255ccore">
-      <UniqueIdentifier>{246e9838-233b-4a36-b8e9-840dfb29346c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\src%255cevent">
-      <UniqueIdentifier>{42dc51f4-c89f-42a9-9e1b-b68658aca118}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\src%255chttp">
-      <UniqueIdentifier>{4595a907-526c-4a43-bfe8-5f2ccffb4b39}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\src%255cevent%255cmodules">
-      <UniqueIdentifier>{fd8e97aa-864b-4eb7-9d8f-e251cfeb8463}</UniqueIdentifier>
     </Filter>
     <Filter Include="头文件\src/core">
       <UniqueIdentifier>{52acc837-a128-4a8c-9967-3b1220f3d0de}</UniqueIdentifier>
@@ -70,394 +52,412 @@
     <Filter Include="源文件\nginx-rtmp-module">
       <UniqueIdentifier>{507e239b-786f-43d5-9141-6b5e8d1d4814}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\nginx-rtmp-module%255chls">
-      <UniqueIdentifier>{ff609fcc-a24b-4e71-a648-ffc66096331e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="头文件\nginx-rtmp-module/hls">
       <UniqueIdentifier>{41c65f44-23a9-4645-b9f7-9d8c5dbea266}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\nginx-rtmp-module%255cdash">
-      <UniqueIdentifier>{0f22ea00-8e86-44e7-9808-b0b76a51926f}</UniqueIdentifier>
     </Filter>
     <Filter Include="头文件\nginx-rtmp-module/dash">
       <UniqueIdentifier>{1f761d24-2e29-4e8d-bf86-f5b36ffca0be}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\src/core">
+      <UniqueIdentifier>{246e9838-233b-4a36-b8e9-840dfb29346c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src/event">
+      <UniqueIdentifier>{42dc51f4-c89f-42a9-9e1b-b68658aca118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src/event/modules">
+      <UniqueIdentifier>{fd8e97aa-864b-4eb7-9d8f-e251cfeb8463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src/http">
+      <UniqueIdentifier>{4595a907-526c-4a43-bfe8-5f2ccffb4b39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src/http/modules">
+      <UniqueIdentifier>{34b8a4e8-4bd2-48cc-8ad8-fe7a55665260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src/os/win32">
+      <UniqueIdentifier>{c7b39e54-5bdb-47f3-9e42-0e4be2886a3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\nginx-rtmp-module/dash">
+      <UniqueIdentifier>{0f22ea00-8e86-44e7-9808-b0b76a51926f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\nginx-rtmp-module/hls">
+      <UniqueIdentifier>{ff609fcc-a24b-4e71-a648-ffc66096331e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\core\nginx.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_array.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_buf.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_conf_file.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_connection.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_cpuinfo.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_crc32.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_crypt.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_cycle.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_file.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_hash.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_inet.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_list.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_log.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_md5.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_module.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_murmurhash.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_open_file_cache.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_output_chain.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_palloc.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_parse.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_parse_time.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_proxy_protocol.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_queue.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_radix_tree.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_rbtree.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_regex.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_resolver.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_rwlock.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_sha1.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_shmtx.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_slab.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_spinlock.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_string.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_syslog.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\core\ngx_times.c">
-      <Filter>源文件\src%255ccore</Filter>
+      <Filter>源文件\src/core</Filter>
     </ClCompile>
     <ClCompile Include="src\event\ngx_event.c">
-      <Filter>源文件\src%255cevent</Filter>
+      <Filter>源文件\src/event</Filter>
     </ClCompile>
     <ClCompile Include="src\event\ngx_event_accept.c">
-      <Filter>源文件\src%255cevent</Filter>
+      <Filter>源文件\src/event</Filter>
     </ClCompile>
     <ClCompile Include="src\event\ngx_event_acceptex.c">
-      <Filter>源文件\src%255cevent</Filter>
+      <Filter>源文件\src/event</Filter>
     </ClCompile>
     <ClCompile Include="src\event\ngx_event_connect.c">
-      <Filter>源文件\src%255cevent</Filter>
+      <Filter>源文件\src/event</Filter>
     </ClCompile>
     <ClCompile Include="src\event\ngx_event_openssl.c">
-      <Filter>源文件\src%255cevent</Filter>
+      <Filter>源文件\src/event</Filter>
     </ClCompile>
     <ClCompile Include="src\event\ngx_event_openssl_stapling.c">
-      <Filter>源文件\src%255cevent</Filter>
+      <Filter>源文件\src/event</Filter>
     </ClCompile>
     <ClCompile Include="src\event\ngx_event_pipe.c">
-      <Filter>源文件\src%255cevent</Filter>
+      <Filter>源文件\src/event</Filter>
     </ClCompile>
     <ClCompile Include="src\event\ngx_event_posted.c">
-      <Filter>源文件\src%255cevent</Filter>
+      <Filter>源文件\src/event</Filter>
     </ClCompile>
     <ClCompile Include="src\event\ngx_event_timer.c">
-      <Filter>源文件\src%255cevent</Filter>
+      <Filter>源文件\src/event</Filter>
     </ClCompile>
     <ClCompile Include="src\event\modules\ngx_iocp_module.c">
-      <Filter>源文件\src%255cevent%255cmodules</Filter>
+      <Filter>源文件\src/event/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\event\modules\ngx_win32_select_module.c">
-      <Filter>源文件\src%255cevent%255cmodules</Filter>
+      <Filter>源文件\src/event/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\ngx_http.c">
-      <Filter>源文件\src%255chttp</Filter>
+      <Filter>源文件\src/http</Filter>
     </ClCompile>
     <ClCompile Include="src\http\ngx_http_copy_filter_module.c">
-      <Filter>源文件\src%255chttp</Filter>
+      <Filter>源文件\src/http</Filter>
     </ClCompile>
     <ClCompile Include="src\http\ngx_http_core_module.c">
-      <Filter>源文件\src%255chttp</Filter>
+      <Filter>源文件\src/http</Filter>
     </ClCompile>
     <ClCompile Include="src\http\ngx_http_file_cache.c">
-      <Filter>源文件\src%255chttp</Filter>
+      <Filter>源文件\src/http</Filter>
     </ClCompile>
     <ClCompile Include="src\http\ngx_http_header_filter_module.c">
-      <Filter>源文件\src%255chttp</Filter>
+      <Filter>源文件\src/http</Filter>
     </ClCompile>
     <ClCompile Include="src\http\ngx_http_parse.c">
-      <Filter>源文件\src%255chttp</Filter>
+      <Filter>源文件\src/http</Filter>
     </ClCompile>
     <ClCompile Include="src\http\ngx_http_postpone_filter_module.c">
-      <Filter>源文件\src%255chttp</Filter>
+      <Filter>源文件\src/http</Filter>
     </ClCompile>
     <ClCompile Include="src\http\ngx_http_request.c">
-      <Filter>源文件\src%255chttp</Filter>
+      <Filter>源文件\src/http</Filter>
     </ClCompile>
     <ClCompile Include="src\http\ngx_http_request_body.c">
-      <Filter>源文件\src%255chttp</Filter>
+      <Filter>源文件\src/http</Filter>
     </ClCompile>
     <ClCompile Include="src\http\ngx_http_script.c">
-      <Filter>源文件\src%255chttp</Filter>
+      <Filter>源文件\src/http</Filter>
     </ClCompile>
     <ClCompile Include="src\http\ngx_http_special_response.c">
-      <Filter>源文件\src%255chttp</Filter>
+      <Filter>源文件\src/http</Filter>
     </ClCompile>
     <ClCompile Include="src\http\ngx_http_upstream.c">
-      <Filter>源文件\src%255chttp</Filter>
+      <Filter>源文件\src/http</Filter>
     </ClCompile>
     <ClCompile Include="src\http\ngx_http_upstream_round_robin.c">
-      <Filter>源文件\src%255chttp</Filter>
+      <Filter>源文件\src/http</Filter>
     </ClCompile>
     <ClCompile Include="src\http\ngx_http_variables.c">
-      <Filter>源文件\src%255chttp</Filter>
+      <Filter>源文件\src/http</Filter>
     </ClCompile>
     <ClCompile Include="src\http\ngx_http_write_filter_module.c">
-      <Filter>源文件\src%255chttp</Filter>
+      <Filter>源文件\src/http</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_access_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_addition_filter_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_auth_basic_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_auth_request_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_autoindex_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_browser_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_charset_filter_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_chunked_filter_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_empty_gif_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_fastcgi_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_flv_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_geo_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_gunzip_filter_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_gzip_filter_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_gzip_static_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_headers_filter_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_index_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_limit_conn_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_limit_req_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_log_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_map_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_memcached_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_mp4_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_not_modified_filter_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_proxy_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_random_index_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_range_filter_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_referer_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_rewrite_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_scgi_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_secure_link_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_slice_filter_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_split_clients_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_ssi_filter_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_ssl_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_static_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_sub_filter_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_upstream_hash_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_upstream_ip_hash_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_upstream_keepalive_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_upstream_least_conn_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_upstream_zone_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_userid_filter_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_uwsgi_module.c">
-      <Filter>源文件\src%255chttp%255cmodules</Filter>
+      <Filter>源文件\src/http/modules</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_alloc.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_dlopen.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_errno.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_event_log.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_files.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_process.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_process_cycle.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_shmem.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_socket.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_stat.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_thread.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_time.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_udp_wsarecv.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_user.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_win32_init.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_wsarecv.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_wsarecv_chain.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_wsasend.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="src\os\win32\ngx_wsasend_chain.c">
-      <Filter>源文件\src%255cos%255cwin32</Filter>
+      <Filter>源文件\src/os/win32</Filter>
     </ClCompile>
     <ClCompile Include="build\ngx_modules.c">
       <Filter>源文件\generate</Filter>
@@ -556,16 +556,16 @@
       <Filter>源文件\nginx-rtmp-module</Filter>
     </ClCompile>
     <ClCompile Include="..\nginx-rtmp-module\hls\ngx_rtmp_hls_module.c">
-      <Filter>源文件\nginx-rtmp-module%255chls</Filter>
+      <Filter>源文件\nginx-rtmp-module/hls</Filter>
     </ClCompile>
     <ClCompile Include="..\nginx-rtmp-module\hls\ngx_rtmp_mpegts.c">
-      <Filter>源文件\nginx-rtmp-module%255chls</Filter>
+      <Filter>源文件\nginx-rtmp-module/hls</Filter>
     </ClCompile>
     <ClCompile Include="..\nginx-rtmp-module\dash\ngx_rtmp_dash_module.c">
-      <Filter>源文件\nginx-rtmp-module%255cdash</Filter>
+      <Filter>源文件\nginx-rtmp-module/dash</Filter>
     </ClCompile>
     <ClCompile Include="..\nginx-rtmp-module\dash\ngx_rtmp_mp4.c">
-      <Filter>源文件\nginx-rtmp-module%255cdash</Filter>
+      <Filter>源文件\nginx-rtmp-module/dash</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
