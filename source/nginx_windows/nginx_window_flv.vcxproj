@@ -410,9 +410,13 @@
     <LinkIncremental>true</LinkIncremental>
     <CustomBuildBeforeTargets>
     </CustomBuildBeforeTargets>
+    <OutDir>$(SolutionDir)$(Configuration)_flv\</OutDir>
+    <IntDir>$(Configuration)_flv\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)_flv\</OutDir>
+    <IntDir>$(Configuration)_flv\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -432,6 +436,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)/libs/openssl;$(SolutionDir)/../pcre;$(SolutionDir)/../zlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>ws2_32.lib;legacy_stdio_definitions.lib;pcre.lib;libcrypto32MTd.lib;libssl32MTd.lib;crypt32.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
     </Link>
     <CustomBuildStep>
       <Command>
@@ -467,6 +472,8 @@ nmake -f auto/lib/zlib/makefile.msvc CPU_OPT="" LIBC=-MT ZLIB="../zlib"</Command
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)/libs/openssl;$(SolutionDir)/../pcre;$(SolutionDir)/../zlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>ws2_32.lib;legacy_stdio_definitions.lib;pcre.lib;libcrypto32MT.lib;libssl32MT.lib;crypt32.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
     </Link>
     <PreBuildEvent>
       <Command>nmake -f auto/lib/pcre/makefile.msvc PCRE="../pcre" CPU_OPT="" LIBC=-MT
