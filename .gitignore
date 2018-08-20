@@ -8,3 +8,5 @@
 /source/nginx_windows/Makefile
 /source/nginx_windows/vc140.pdb
 *.o
+/source/nginx_windows/Debug_flv
+/source/nginx_windows/Release_flv
