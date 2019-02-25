@@ -555,9 +555,6 @@
     <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_relay_module.c">
       <Filter>源文件\http-flv-module</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_script.c">
-      <Filter>源文件\http-flv-module</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_send.c">
       <Filter>源文件\http-flv-module</Filter>
     </ClCompile>
@@ -581,6 +578,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\car-eye-http-flv-module\hls\ngx_rtmp_mpegts.c">
       <Filter>源文件\http-flv-module/hls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_flv_live_index_module.c">
+      <Filter>源文件\http-flv-module</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -28,6 +28,7 @@
     <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_core_module.c" />
     <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_eval.c" />
     <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_exec_module.c" />
+    <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_flv_live_index_module.c" />
     <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_flv_module.c" />
     <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_gop_cache_module.c" />
     <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_handler.c" />
@@ -45,7 +46,6 @@
     <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_receive.c" />
     <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_record_module.c" />
     <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_relay_module.c" />
-    <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_script.c" />
     <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_send.c" />
     <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_shared.c" />
     <ClCompile Include="..\..\..\car-eye-http-flv-module\ngx_rtmp_stat_module.c" />
