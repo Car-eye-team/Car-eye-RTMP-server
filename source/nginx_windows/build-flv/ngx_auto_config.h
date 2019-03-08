@@ -1,12 +1,21 @@
-#define NGX_CONFIGURE " --with-cc=cl --builddir=build-flv --prefix= --conf-path=conf/nginx.conf --pid-path=logs/nginx.pid --http-log-path=logs/access.log --error-log-path=logs/error.log --sbin-path=nginx.exe --http-client-body-temp-path=temp/client_body_temp --http-proxy-temp-path=temp/proxy_temp --http-fastcgi-temp-path=temp/fastcgi_temp --with-cc-opt=-DFD_SETSIZE=1024 --with-pcre=../pcre --with-zlib=../zlib --with-openssl=./include --with-select_module --with-http_ssl_module --with-http_sub_module --add-module=../../../car-eye-http-flv-module"
+#define NGX_CONFIGURE " --with-cc=cl --builddir=build-flv --prefix= --conf-path=conf/nginx.conf --pid-path=logs/nginx.pid --http-log-path=logs/access.log --error-log-path=logs/error.log --sbin-path=nginx.exe --http-client-body-temp-path=temp/client_body_temp --http-proxy-temp-path=temp/proxy_temp --http-fastcgi-temp-path=temp/fastcgi_temp --with-cc-opt=-DFD_SETSIZE=1024 --with-pcre=../pcre --with-zlib=../zlib --with-openssl=./include --with-select_module --with-http_ssl_module --with-http_sub_module --with-debug --add-module=../../../car-eye-http-flv-module"
 
 // 解决 无法解析的外部符号 ___iob_func的错误 VS2015之后版本进行了变更
 FILE* __cdecl __iob_func(unsigned i);
+
+#if _DEBUG
+#ifndef NGX_DEBUG
+#define NGX_DEBUG  1
+#endif
+#endif
 
 #ifndef NGX_COMPILER
 #define NGX_COMPILER  "cl "
 #endif
 
+#ifndef NGX_HAVE_C99_VARIADIC_MACROS
+#define NGX_HAVE_C99_VARIADIC_MACROS  1
+#endif
 
 #ifndef NGX_HAVE_INET6
 #define NGX_HAVE_INET6  1
