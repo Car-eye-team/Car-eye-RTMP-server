@@ -15,7 +15,8 @@ ALL_INCS = -I src/core \
 	-I ../zlib \
 	-I build-flv \
 	-I src/http \
-	-I src/http/modules
+	-I src/http/modules \
+	-I ../../../car-eye-http-flv-module
 
 
 CORE_DEPS = src/core/nginx.h \
@@ -105,10 +106,11 @@ HTTP_DEPS = src/http/ngx_http.h \
 
 
 HTTP_INCS = -I src/http \
-	-I src/http/modules
+	-I src/http/modules \
+	-I ../../../car-eye-http-flv-module
 
 
-ADDON_DEPS = $(CORE_DEPS)                                                                       ../../../car-eye-http-flv-module/ngx_rtmp_amf.h                                   ../../../car-eye-http-flv-module/ngx_rtmp_bandwidth.h                             ../../../car-eye-http-flv-module/ngx_rtmp_cmd_module.h                            ../../../car-eye-http-flv-module/ngx_rtmp_codec_module.h                          ../../../car-eye-http-flv-module/ngx_rtmp_eval.h                                  ../../../car-eye-http-flv-module/ngx_rtmp.h                                       ../../../car-eye-http-flv-module/ngx_rtmp_version.h                               ../../../car-eye-http-flv-module/ngx_rtmp_live_module.h                           ../../../car-eye-http-flv-module/ngx_rtmp_netcall_module.h                        ../../../car-eye-http-flv-module/ngx_rtmp_play_module.h                           ../../../car-eye-http-flv-module/ngx_rtmp_record_module.h                         ../../../car-eye-http-flv-module/ngx_rtmp_notify_module.h                         ../../../car-eye-http-flv-module/ngx_rtmp_gop_cache_module.h                      ../../../car-eye-http-flv-module/ngx_rtmp_relay_module.h                          ../../../car-eye-http-flv-module/ngx_rtmp_streams.h                               ../../../car-eye-http-flv-module/ngx_rtmp_bitop.h                                 ../../../car-eye-http-flv-module/ngx_rtmp_proxy_protocol.h                        ../../../car-eye-http-flv-module/ngx_rtmp_variables.h                             ../../../car-eye-http-flv-module/ngx_rtmp_script.h                                ../../../car-eye-http-flv-module/hls/ngx_rtmp_mpegts.h                            ../../../car-eye-http-flv-module/dash/ngx_rtmp_mp4.h                               $(HTTP_DEPS)
+ADDON_DEPS = $(CORE_DEPS)                                                                       ../../../car-eye-http-flv-module/ngx_rtmp_amf.h                                   ../../../car-eye-http-flv-module/ngx_rtmp_bandwidth.h                             ../../../car-eye-http-flv-module/ngx_rtmp_cmd_module.h                            ../../../car-eye-http-flv-module/ngx_rtmp_codec_module.h                          ../../../car-eye-http-flv-module/ngx_rtmp_eval.h                                  ../../../car-eye-http-flv-module/ngx_rtmp.h                                       ../../../car-eye-http-flv-module/ngx_rtmp_version.h                               ../../../car-eye-http-flv-module/ngx_rtmp_live_module.h                           ../../../car-eye-http-flv-module/ngx_rtmp_netcall_module.h                        ../../../car-eye-http-flv-module/ngx_rtmp_play_module.h                           ../../../car-eye-http-flv-module/ngx_rtmp_record_module.h                         ../../../car-eye-http-flv-module/ngx_rtmp_gop_cache_module.h                      ../../../car-eye-http-flv-module/ngx_rtmp_relay_module.h                          ../../../car-eye-http-flv-module/ngx_rtmp_streams.h                               ../../../car-eye-http-flv-module/ngx_rtmp_bitop.h                                 ../../../car-eye-http-flv-module/ngx_rtmp_proxy_protocol.h                        ../../../car-eye-http-flv-module/ngx_rtmp_variables.h                             ../../../car-eye-http-flv-module/hls/ngx_rtmp_mpegts.h                            ../../../car-eye-http-flv-module/dash/ngx_rtmp_mp4.h                                                                                               ../../../car-eye-http-flv-module/ngx_http_flv_live_module.h                        $(HTTP_DEPS)
 
 
 build:	binary modules #manpage
@@ -246,6 +248,7 @@ build-flv/nginx.exe:	build-flv/src/core/nginx.obj \
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_record_module.obj \
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_gop_cache_module.obj \
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_live_module.obj \
+	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_flv_live_index_module.obj \
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_play_module.obj \
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_flv_module.obj \
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_mp4_module.obj \
@@ -260,7 +263,6 @@ build-flv/nginx.exe:	build-flv/src/core/nginx.obj \
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_bitop.obj \
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_proxy_protocol.obj \
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_variables.obj \
-	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_script.obj \
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_parse.obj \
 	build-flv/addon/hls/ngx_rtmp_hls_module.obj \
 	build-flv/addon/dash/ngx_rtmp_dash_module.obj \
@@ -406,6 +408,7 @@ build-flv/nginx.exe:	build-flv/src/core/nginx.obj \
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_record_module.obj 
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_gop_cache_module.obj 
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_live_module.obj 
+	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_flv_live_index_module.obj 
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_play_module.obj 
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_flv_module.obj 
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_mp4_module.obj 
@@ -420,7 +423,6 @@ build-flv/nginx.exe:	build-flv/src/core/nginx.obj \
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_bitop.obj 
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_proxy_protocol.obj 
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_variables.obj 
-	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_script.obj 
 	build-flv/addon/car-eye-http-flv-module/ngx_rtmp_parse.obj 
 	build-flv/addon/hls/ngx_rtmp_hls_module.obj 
 	build-flv/addon/dash/ngx_rtmp_dash_module.obj 
@@ -1361,6 +1363,13 @@ build-flv/addon/car-eye-http-flv-module/ngx_rtmp_live_module.obj:	$(ADDON_DEPS) 
 		../../../car-eye-http-flv-module/ngx_rtmp_live_module.c
 
 
+build-flv/addon/car-eye-http-flv-module/ngx_rtmp_flv_live_index_module.obj:	$(ADDON_DEPS) \
+	../../../car-eye-http-flv-module/ngx_rtmp_flv_live_index_module.c
+	$(CC) -c $(CFLAGS) -Yungx_config.h -Fpbuild-flv/ngx_config.pch $(ALL_INCS) \
+		-Fobuild-flv/addon/car-eye-http-flv-module/ngx_rtmp_flv_live_index_module.obj \
+		../../../car-eye-http-flv-module/ngx_rtmp_flv_live_index_module.c
+
+
 build-flv/addon/car-eye-http-flv-module/ngx_rtmp_play_module.obj:	$(ADDON_DEPS) \
 	../../../car-eye-http-flv-module/ngx_rtmp_play_module.c
 	$(CC) -c $(CFLAGS) -Yungx_config.h -Fpbuild-flv/ngx_config.pch $(ALL_INCS) \
@@ -1457,13 +1466,6 @@ build-flv/addon/car-eye-http-flv-module/ngx_rtmp_variables.obj:	$(ADDON_DEPS) \
 	$(CC) -c $(CFLAGS) -Yungx_config.h -Fpbuild-flv/ngx_config.pch $(ALL_INCS) \
 		-Fobuild-flv/addon/car-eye-http-flv-module/ngx_rtmp_variables.obj \
 		../../../car-eye-http-flv-module/ngx_rtmp_variables.c
-
-
-build-flv/addon/car-eye-http-flv-module/ngx_rtmp_script.obj:	$(ADDON_DEPS) \
-	../../../car-eye-http-flv-module/ngx_rtmp_script.c
-	$(CC) -c $(CFLAGS) -Yungx_config.h -Fpbuild-flv/ngx_config.pch $(ALL_INCS) \
-		-Fobuild-flv/addon/car-eye-http-flv-module/ngx_rtmp_script.obj \
-		../../../car-eye-http-flv-module/ngx_rtmp_script.c
 
 
 build-flv/addon/car-eye-http-flv-module/ngx_rtmp_parse.obj:	$(ADDON_DEPS) \

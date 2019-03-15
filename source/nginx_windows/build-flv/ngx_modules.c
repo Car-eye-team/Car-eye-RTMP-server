@@ -15,6 +15,7 @@ extern ngx_module_t  ngx_rtmp_access_module;
 extern ngx_module_t  ngx_rtmp_record_module;
 extern ngx_module_t  ngx_rtmp_gop_cache_module;
 extern ngx_module_t  ngx_rtmp_live_module;
+extern ngx_module_t  ngx_rtmp_flv_live_index_module;
 extern ngx_module_t  ngx_rtmp_play_module;
 extern ngx_module_t  ngx_rtmp_flv_module;
 extern ngx_module_t  ngx_rtmp_mp4_module;
@@ -93,6 +94,7 @@ ngx_module_t *ngx_modules[] = {
     &ngx_rtmp_record_module,
     &ngx_rtmp_gop_cache_module,
     &ngx_rtmp_live_module,
+    &ngx_rtmp_flv_live_index_module,
     &ngx_rtmp_play_module,
     &ngx_rtmp_flv_module,
     &ngx_rtmp_mp4_module,
@@ -173,6 +175,7 @@ char *ngx_module_names[] = {
     "ngx_rtmp_record_module",
     "ngx_rtmp_gop_cache_module",
     "ngx_rtmp_live_module",
+    "ngx_rtmp_flv_live_index_module",
     "ngx_rtmp_play_module",
     "ngx_rtmp_flv_module",
     "ngx_rtmp_mp4_module",

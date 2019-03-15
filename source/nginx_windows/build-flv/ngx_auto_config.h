@@ -4,13 +4,15 @@
 FILE* __cdecl __iob_func(unsigned i);
 
 #if _DEBUG
+
 #ifndef NGX_DEBUG
 #define NGX_DEBUG  1
 #endif
+
 #endif
 
 #ifndef NGX_COMPILER
-#define NGX_COMPILER  "cl "
+#define NGX_COMPILER  "cl 19.13"
 #endif
 
 #ifndef NGX_HAVE_C99_VARIADIC_MACROS
