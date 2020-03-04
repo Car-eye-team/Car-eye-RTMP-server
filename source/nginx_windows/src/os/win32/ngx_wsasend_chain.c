@@ -10,7 +10,7 @@
 #include <ngx_event.h>
 
 
-#define NGX_WSABUFS  8
+#define NGX_WSABUFS  1024
 
 
 ngx_chain_t *
